@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <img src="images/Recurso 3.png" alt="LOGO">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="recetas.html" class="nav-link ">Recetas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="nosotros.html" class="nav-link ">Nosotros</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="hero">
+        <div class="container">
+            <h2 class="h2-sub">
+                <span class="fil">B</span>ienvenido
+            </h2>
+            <h1 class="head">ZANAMIX</h1>
+            <div class="he-des">
+                <h5>Energia en cada gramo</h5>
+                <a href="recetas.html" class="btn cta-btn">Explora</a>
+            </div>
+        </div>
+    </section>
+
+
+    <main class="Contenedor">
+        <h1>Nuestros productos</h1>
+        <div class="grid">
+            <div class="Producto">
+                <a href="productos.html">
+                    <img class="producto__imagen" src="images/img1.jpg" alt="Imagen camisa">
+                    <div class="Producto__informacion">
+                        <p class="producto__nombre">Pan de Zanahoria</p>
+
+                    </div>
+                </a>
+            </div>
+            <!--.producto-->
+            <div class="Producto">
+                <a href="productos1.html">
+                    <img class="producto__imagen" src="images/img2.jpg" alt="Imagen camisa">
+                    <div class="Producto__informacion">
+                        <p class="producto__nombre">Queque de Zanahoria</p>
+
+                    </div>
+                </a>
+            </div>
+            <!--.producto-->
+            <div class="Producto">
+                <a href="productos2.html">
+                    <img class="producto__imagen" src="images/img3.jpg" alt="Imagen camisa">
+                    <div class="Producto__informacion">
+                        <p class="producto__nombre">Chicha de Zanahoria</p>
+
+                    </div>
+                </a>
+            </div>
+            <!--.producto-->
+            <div class="Producto">
+                <a href="productos.html">
+                    <img class="Producto__imagen" src="images/img4.jpg" alt="Imagen camisa">
+                    <div class="Producto__informacion">
+                        <p class="producto__nombre">Papilla de Zanahoria</p>
+
+                    </div>
+                </a>
+            </div>
+            <!--.producto-->
+            <div class="Productosç">
+                <a href="productos.html">
+                    <img class="Producto__imagen" src="images/img5.jpg" alt="Imagen camisa">
+                    <div class="Producto__informacion">
+                        <p class="producto__nombre">Galletas de Zanahoria</p>
+
+                    </div>
+                </a>
+            </div>
+            <!--.producto-->
+            <div class="Producto">
+                <a href="productos.html">
+                    <img class="Producto__imagen" src="images/img6.jpg" alt="Imagen camisa">
+                    <div class="Producto__informacion">
+                        <p class="producto__nombre">Fritos de Zanahoria</p>
+
+                    </div>
+                </a>
+
+                <div class="grafico grafico--camisas"></div>
+                <div class="grafico grafico--node"></div>
+            </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+
+                <div class="footer-content-about">
+                    <h4>Nosotros</h4>
+                    <div class="circle">
+                        <i class="fas fa-circle"></i>
+                    </div>
+                    <p>Somos una empresa que busca ofrecer una alternativa para la harina Tradicional ademas de ofrecer una guia de usos para nuestro producto con una increible variabilidad de recetas
+                    </p>
+                </div>
+                <div class="footer-div">
+                    <div class="social-media">
+                        <h4>Siguenos</h4>
+                        <ul class="social-icons">
+                            <li>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-pinterest"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Noticias</h4>
+                        <form action="" class="news-form">
+                            <input type="text" class="news-input" placeholder="Escribe tu email">
+                            <button class="news-btn" type="submit">
+                                <i class="fas fa-envelope"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const selectElement = function(element) {
+            return document.querySelector(element);
+        }
+
+
+        let menuToggle = selectElement('.menu-toggle');
+        let body = selectElement('body');
+
+        menuToggle.addEventListener('click', function() {
+            body.classList.toggle('open');
+        })
+    </script>
+
+
+</body>
+
+</html>
